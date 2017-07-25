@@ -44,7 +44,7 @@
 ### Wept
 1. cnpm i wept -g
 2. 进入小程序项目根目录下执行命令：wept
-3. 使用 Chrome 访问 http://localhost:300011 打开开发者工具后启用移动页面调试模式（Mac 下快捷键为 ⌘ ⇧ M）
+3. 使用 Chrome 访问 http://localhost:3000 打开开发者工具后启用移动页面调试模式（Mac 下快捷键为 ⌘ ⇧ M）
 
 ## WeUI for 小程序 为微信小程序量身设计
 1. https://github.com/weui/weui-wxss
