@@ -1,0 +1,180 @@
+page {
+    background-color: #efeff4;
+}
+
+.weui-media-box {
+    background-color: #FAFAFA;
+    padding: 20rpx;
+}
+
+.weui-panel__hd {
+    padding: 20rpx;
+}
+
+.weui-media-box__desc {
+    line-height: 1.3;
+}
+
+.weui-media-box__bd {
+    padding-right: 26rpx;
+}
+
+.comment-box {
+    position: relative;
+    background: #F7F7F7;
+    margin-top: 30rpx;
+    padding: 20rpx;
+}
+
+.comment-box::after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2rpx solid rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+}
+
+.arrow {
+    position: relative;
+    z-index: 1;
+    width: 30rpx;
+    height: 30rpx;
+    float: right;
+    margin-top: -33rpx;
+    margin-right: 62rpx;
+    background: #F7F7F7;
+    transform: rotate(45deg);
+}
+
+.arrow:after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 2rpx 0 0 2rpx;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+}
+
+.score-box {
+    color: #333333;
+}
+
+.ion-star {
+    font-size: 38rpx;
+    margin: 0 10rpx;
+    color: #999;
+}
+
+.ion-star.active {
+    color: #CFB76B;
+}
+
+textarea {
+    width: inherit;
+    margin-top: 20rpx;
+    background-color: #fff;
+    height: 160rpx;
+    padding: 20rpx;
+    border-radius: 10rpx;
+}
+
+textarea::after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2rpx solid rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 20rpx;
+}
+
+.textarea-placeholder {
+    word-wrap: break-word
+}
+
+.choose-image-wrp {
+    position: relative;
+    color: #333333;
+    margin-top: 20rpx;
+}
+
+.choose-image-wrp .choose-tip {
+    font-size: 20rpx;
+    color: #999;
+}
+
+.weui-uploader__bd {
+    margin-top: 20rpx;
+}
+
+.weui-uploader__input-box {
+    border: 2rpx dashed #d9d9d9;
+    background-color: #ffffff;
+}
+
+.weui-uploader__input-box:before {
+    width: 4rpx;
+    height: 40rpx;
+}
+
+.weui-uploader__input-box:after {
+    width: 40rpx;
+    height: 4rpx;
+}
+
+.weui-uploader__img {
+    position: relative;
+}
+
+.weui-uploader__img .minus {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50rpx;
+    height: 50rpx;
+    overflow: hidden;
+}
+
+.ion-minus-circled {
+    font-size: 38rpx;
+    position: absolute;
+    top: -9rpx;
+    right: 0;
+    color: #ff0000;
+}
+
+.weui-media-box__checkbox {
+    padding: 8rpx;
+    color: #333333;
+}
+
+.weui-media-box__checkbox .ion-ios-checkmark {
+    font-size: 36rpx;
+    margin-right: 10rpx;
+    color: #999;
+}
+
+.ion-ios-checkmark.active {
+    color: #19C361;
+}

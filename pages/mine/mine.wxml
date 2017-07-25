@@ -1,0 +1,114 @@
+<!--pages/mine/mine.wxml-->
+<navigator url="/pages/mine-info/mine-info" class="weui-cells avatar-list userinfo">
+    <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__hd">
+            <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="weui-cell__bd">
+            <view class="nickname">
+                <text>{{userInfo.nickName}}</text>
+            </view>
+            <view class="account">
+                <text>账号：sw_sxadscdcjscs</text>
+            </view>
+        </view>
+    </view>
+</navigator>
+
+<view class="weui-cells order-type-cells">
+    <navigator url="/pages/orders/orders" class="weui-cell weui-cell_link">
+        <view class="weui-cell__bd">
+            <text>我的订单</text>
+        </view>
+        <view class="weui-cell__ft">
+            <text>全部</text>
+        </view>
+    </navigator>
+</view>
+<view class="types-box">
+    <view class="type-item">
+        <view class="item-icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="item-label">
+            <text>待付款</text>
+        </view>
+    </view>
+    <view class="type-item">
+        <view class="item-icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="item-label">
+            <text>待发货</text>
+        </view>
+    </view>
+    <view class="type-item">
+        <view class="item-icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="item-label">
+            <text>待收货</text>
+        </view>
+    </view>
+    <view class="type-item">
+        <view class="item-icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="item-label">
+            <text>待评价</text>
+        </view>
+    </view>
+</view>
+
+<view class="weui-cells icon-list">
+    <!-- <view class="weui-cell weui-cell_link">
+        <view class="weui-cell__hd">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="weui-cell__bd">
+            <text>退换货记录</text>
+        </view>
+        <view class="weui-cell__ft">
+        </view>
+    </view> -->
+    <view class="weui-cell weui-cell_link">
+        <view class="weui-cell__hd icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="weui-cell__bd">
+            <text>我的评价</text>
+        </view>
+        <view class="weui-cell__ft">
+        </view>
+    </view>
+    <navigator url="/pages/shipping-address/shipping-address?title=收货地址" class="weui-cell weui-cell_link">
+        <view class="weui-cell__hd icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="weui-cell__bd">
+            <text>收货地址</text>
+        </view>
+        <view class="weui-cell__ft">
+        </view>
+    </navigator>
+    <view class="weui-cell weui-cell_link">
+        <view class="weui-cell__hd icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="weui-cell__bd" bindtap="makePhoneCall">
+            <text>联系客服</text>
+        </view>
+        <view class="weui-cell__ft">
+        </view>
+    </view>
+    <!-- <view class="weui-cell weui-cell_link">
+        <view class="weui-cell__hd icon">
+            <text class="ion-ios-book-outline"></text>
+        </view>
+        <view class="weui-cell__bd">
+            <text>关于</text>
+        </view>
+        <view class="weui-cell__ft">
+        </view>
+    </view> -->
+</view>

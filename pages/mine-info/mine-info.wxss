@@ -1,0 +1,5 @@
+/* pages/mine-info/mine-info.wxss */
+
+page {
+    background-color: #efeff4;
+}

@@ -1,0 +1,65 @@
+<view class="weui-panel" wx:for="{{products}}" wx:key="*this" wx:for-index="productIndex">
+    <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_appmsg active-bg">
+            <view class="weui-media-box__hd">
+                <image class="weui-media-box__thumb" src="{{item.image}}" mode="aspectFill"></image>
+            </view>
+            <view class="weui-media-box__bd">
+                <view class="weui-media-box__title">{{item.name}}</view>
+                <view class="weui-media-box__desc text-sw">￥{{item.price}}</view>
+            </view>
+            <view class="weui-cell__ft"></view>
+        </view>
+        <view class="weui-panel__hd">
+            <view class="text-right">
+                <button size="mini" data-index="{{productIndex}}" bindtap="open">
+                    填写评价
+                    <text class="ion-ios-arrow-down"></text>
+                </button>
+            </view>
+            <view class="comment-box" wx:if="{{item.open}}">
+
+                <view class="arrow"></view>
+                <view style="z-index: 1;position: relative;">
+                    <view class="score-box">
+                        <text>评分：</text>
+                        <text class="ion-star {{item.star >= 1 ? 'active': ''}}" data-index="{{productIndex}}" data-star="1" bindtap="setStar"></text>
+                        <text class="ion-star {{item.star >= 2 ? 'active': ''}}" data-index="{{productIndex}}" data-star="2" bindtap="setStar"></text>
+                        <text class="ion-star {{item.star >= 3 ? 'active': ''}}" data-index="{{productIndex}}" data-star="3" bindtap="setStar"></text>
+                        <text class="ion-star {{item.star >= 4 ? 'active': ''}}" data-index="{{productIndex}}" data-star="4" bindtap="setStar"></text>
+                        <text class="ion-star {{item.star >= 5 ? 'active': ''}}" data-index="{{productIndex}}" data-star="5" bindtap="setStar"></text>
+                    </view>
+                    <textarea auto-focus="false" placeholder-class="textarea-placeholder" placeholder="这次买的商品满意吗？写点心得给其他顾客参考吧。" value="{{item.content}}" data-index="{{productIndex}}" bindinput="bindInputChange" />
+                    <view class="choose-image-wrp">
+                        <view>
+                            <text>添加图片</text>
+                            <text class="choose-tip">（你最多可以上传3张图片）</text>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files">
+                                <block wx:for="{{item.imageList}}" wx:for-item="image" wx:for-index="imgIndex">
+                                    <view class="weui-uploader__file">
+                                        <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" data-urls="{{item.imageList}}" mode="aspectFill" bindtap="previewImage">
+                                            <text class="minus" data-productIndex="{{productIndex}}" data-imgIndex="{{imgIndex}}" catchtap="minusImg"><text class="ion-minus-circled"></text></text>
+                                        </image>
+                                    </view>
+                                </block>
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" data-index="{{productIndex}}" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+
+                    <view class="divider-line margin-top-10"></view>
+                    <view class="weui-media-box__checkbox" data-index="{{productIndex}}" bindtap="setAnonymous">
+                        <text class="ion-ios-checkmark {{item.anonymous ? 'active' : ''}}"></text>
+                        <text>匿名发表</text>
+                    </view>
+                    <button class="blue-btn margin-top-10" bindtap="save">发表评论</button>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>

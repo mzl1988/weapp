@@ -1,0 +1,120 @@
+<scroll-view class="content-scroll" scroll-y="true">
+    <navigator url="/pages/shipping-address/shipping-address?title=选择收货地址" class="weui-panel weui-panel_access" bindtap="toShippingAddress">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text active-bg">
+                <view class="weui-media-box__title padding-right-8">
+                    <text>李兰国 13726268701</text>
+                </view>
+                <view class="weui-media-box__desc padding-right-8">
+                    <text>广东省珠海市香洲区吉大区海滨南路47号光大国际中心</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+    </navigator>
+
+    <view class="weui-cells shipping-type">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <text>配送方式</text>
+            </view>
+            <view class="weui-cell__ft">
+                <radio-group class="radio-group" bindchange="radioChange">
+                    <label class="radio">
+                    <radio value="self" checked="true"/>门店自提
+                </label>
+                    <label class="radio  margin-left-10">
+                    <radio value="express" />快递配送
+                </label>
+                </radio-group>
+
+            </view>
+        </view>
+
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <text>配送时间</text>
+            </view>
+            <view class="weui-cell__ft">
+                <picker bindchange="bindPickerChangeTime" value="{{timeIndex}}" range="{{times}}">
+                    <view class="weui-input">{{times[timeIndex]}}</view>
+                </picker>
+                <picker bindchange="bindPickerChangeDate" value="{{dateIndex}}" range="{{dates}}">
+                    <view class="weui-input">{{dates[dateIndex]}}</view>
+                </picker>
+            </view>
+        </view>
+    </view>
+
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">蜜悦法式烘焙</view>
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_appmsg">
+                <view class="weui-media-box__hd">
+                    <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                    <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                    <view class="weui-flex margin-top-5">
+                        <view class="weui-flex__item price">
+                            <text class="icon">￥</text>
+                            <text>29.9</text>
+                        </view>
+                        <view class="weui-flex__item text-right">
+                            <view class="number-box float-right">
+                                <text>1</text>
+                                <button class="minus-btn"><text class="ion-android-remove"></text></button>
+                                <button class="plus-btn"><text class="ion-android-add"></text></button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-media-box weui-media-box_appmsg">
+                <view class="weui-media-box__hd">
+                    <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">牛轧糖</view>
+                    <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                    <view class="weui-flex margin-top-5">
+                        <view class="weui-flex__item price">
+                            <text class="icon">￥</text>
+                            <text>29.9</text>
+                        </view>
+                        <view class="weui-flex__item text-right">
+                            <view class="number-box float-right">
+                                <text>1</text>
+                                <button class="minus-btn"><text class="ion-android-remove"></text></button>
+                                <button class="plus-btn"><text class="ion-android-add"></text></button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="weui-form-preview margin-top-10">
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">商品金额</view>
+                <view class="weui-form-preview__value text-sw">￥100.00</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">运费</view>
+                <view class="weui-form-preview__value text-sw">￥0.00</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<view class="tabbar">
+    <view class="tabbar-item total-amount">
+        ￥100.00
+    </view>
+    <view class="tabbar-item pay-btn">
+        去支付
+    </view>
+</view>

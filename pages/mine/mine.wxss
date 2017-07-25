@@ -1,0 +1,97 @@
+/* pages/mine/mine.wxss */
+
+page {
+    background-color: #F8F8F8;
+}
+
+.userinfo {
+    background: #CFB76B;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.userinfo::before,
+.userinfo::after {
+    display: none;
+}
+
+.userinfo image {
+    width: 112rpx;
+    height: 112rpx;
+}
+
+.userinfo .nickname {
+    font-size: 32rpx;
+    margin-top: -10rpx;
+}
+
+.userinfo .account {
+    font-size: 24rpx;
+}
+
+.types-box {
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    padding: 20rpx;
+}
+
+.types-box .type-item {
+    flex: 1;
+    display: inline-block;
+}
+
+.item-icon {
+    display: block;
+    margin: 0 auto;
+    width: 48rpx;
+    height: 48rpx;
+    font-size: 38rpx;
+    text-align: center;
+}
+
+.item-label {
+    text-align: center;
+    color: #888;
+    margin-top: 10rpx;
+    font-size: 24rpx;
+}
+
+.order-type-cells {
+    margin-top: 0;
+}
+
+.order-type-cells::before,
+.order-type-cells .weui-cell::before {
+    display: none;
+}
+
+.order-type-cells .weui-cell {
+    padding: 30rpx;
+}
+
+.actionsheet-title {
+    position: relative;
+    height: 65px;
+    padding: 0 20px;
+    line-height: 1.4;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    background: #FCFCFD;
+}
+
+.icon {
+    width: 40rpx;
+    font-size: 32rpx;
+}

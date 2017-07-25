@@ -1,0 +1,191 @@
+<!--pages/orders/orders.wxml-->
+<view class="orders-body">
+    <scroll-view scroll-x="true" class="xscroll_bar" scroll-left="{{scrollLeft}}">
+        <view class="menu_item" style="width:{{itemWidth}};" wx:for="{{menus}}" wx:key="*this" bindtap="tabChange" data-index="{{index}}">
+            <view class="menu_item_tab {{index==activeIndex?'active':''}}">
+                {{item.menu}}
+            </view>
+        </view>
+    </scroll-view>
+
+    <swiper class="swiper" bindchange="swiperChange" current="{{activeIndex}}">
+        <swiper-item wx:for="{{menus}}" wx:key="*this">
+            <scroll-view class="content-scroll" scroll-y="true" bindscrolltolower="bindDownLoad">
+                <view class="weui-panel weui-panel_access" data-id="1" bindtap="toOrderDetails">
+                    <view class="weui-panel__hd">
+                        <view class="weui-flex">
+                            <view class="weui-flex__item">
+                                <text class="text-default">蜜悦法式烘培</text>
+                            </view>
+                            <view class="weui-flex__item text-right text-sw">
+                                <text>等待付款</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_appmsg">
+                            <view class="weui-media-box__hd">
+                                <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                            </view>
+                            <view class="weui-media-box__bd">
+                                <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                                <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                                <view class="weui-flex margin-top-5">
+                                    <view class="weui-flex__item price">
+                                        <text class="icon">￥</text>
+                                        <text>29.9</text>
+                                    </view>
+                                    <view class="weui-flex__item text-right quantity">
+                                        <text>×3</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="weui-media-box weui-media-box_appmsg">
+                            <view class="weui-media-box__hd">
+                                <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                            </view>
+                            <view class="weui-media-box__bd">
+                                <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                                <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                                <view class="weui-flex margin-top-5">
+                                    <view class="weui-flex__item price">
+                                        <text class="icon">￥</text>
+                                        <text>29.9</text>
+                                    </view>
+                                    <view class="weui-flex__item text-right quantity">
+                                        <text>×1</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="weui-panel__ft">
+                        <view class="weui-cell weui-cell_access weui-cell_link">
+                            <view class="weui-flex__item total-amount">
+                                <text>合计：</text>
+                                <text class="icon">￥</text>
+                                <text class="price">29.9</text>
+                            </view>
+                            <view class="text-right" tyle="width:60%">
+                                <button size="mini">取消订单</button>
+                                <button size="mini" class="sw-btn margin-left-10">去 付 款</button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="weui-panel weui-panel_access" data-id="2" bindtap="toOrderDetails">
+                    <view class="weui-panel__hd">
+                        <view class="weui-flex">
+                            <view class="weui-flex__item">
+                                <text class="text-default">蜜悦法式烘培</text>
+                            </view>
+                            <view class="weui-flex__item text-right text-sw">
+                                <text>等待发货</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_appmsg">
+                            <view class="weui-media-box__hd">
+                                <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                            </view>
+                            <view class="weui-media-box__bd">
+                                <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                                <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                                <view class="weui-flex margin-top-5">
+                                    <view class="weui-flex__item price">
+                                        <text class="icon">￥</text>
+                                        <text>29.9</text>
+                                    </view>
+                                    <view class="weui-flex__item text-right quantity">
+                                        <text>×3</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="weui-media-box weui-media-box_appmsg">
+                            <view class="weui-media-box__hd">
+                                <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                            </view>
+                            <view class="weui-media-box__bd">
+                                <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                                <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                                <view class="weui-flex margin-top-5">
+                                    <view class="weui-flex__item price">
+                                        <text class="icon">￥</text>
+                                        <text>29.9</text>
+                                    </view>
+                                    <view class="weui-flex__item text-right quantity">
+                                        <text>×1</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="weui-panel__ft">
+                        <view class="weui-cell weui-cell_access weui-cell_link">
+                            <view class="weui-flex__item total-amount">
+                                <text>合计：</text>
+                                <text class="icon">￥</text>
+                                <text class="price">29.9</text>
+                            </view>
+                            <view class="text-right" tyle="width:60%">
+                                <button size="mini">申请退款</button>
+                                <button size="mini" class="sw-btn margin-left-10" catchtap="makePhoneCall">联系客服</button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="weui-panel weui-panel_access" data-id="2" bindtap="toOrderDetails">
+                    <view class="weui-panel__hd">
+                        <view class="weui-flex">
+                            <view class="weui-flex__item">
+                                <text class="text-default">蜜悦法式烘培</text>
+                            </view>
+                            <view class="weui-flex__item text-right text-sw">
+                                <text>交易完成</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_appmsg">
+                            <view class="weui-media-box__hd">
+                                <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                            </view>
+                            <view class="weui-media-box__bd">
+                                <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                                <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                                <view class="weui-flex margin-top-5">
+                                    <view class="weui-flex__item price">
+                                        <text class="icon">￥</text>
+                                        <text>29.9</text>
+                                    </view>
+                                    <view class="weui-flex__item text-right quantity">
+                                        <text>×3</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="weui-panel__ft">
+                        <view class="weui-cell weui-cell_access weui-cell_link">
+                            <view class="weui-flex__item total-amount">
+                                <text>合计：</text>
+                                <text class="icon">￥</text>
+                                <text class="price">29.9</text>
+                            </view>
+                            <view class="text-right" tyle="width:60%">
+                                <button size="mini">再次购买</button>
+                                <button size="mini" class="sw-btn margin-left-10" data-id="1" catchtap="toEvaluate">去 评 价</button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

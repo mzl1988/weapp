@@ -1,0 +1,81 @@
+page {
+    background-color: #F8F8F8;
+}
+
+.classify-body {
+    flex: 1;
+    min-height: 100%;
+    font-size: 32rpx;
+}
+
+.xscroll_bar {
+    position: fixed;
+    top: 0;
+    overflow-y: hidden;
+    height: 80rpx;
+    line-height: 80rpx;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1;
+}
+
+.menu_item {
+    position: relative;
+    text-align: center;
+    font-size: 30rpx;
+    color: rgb(102, 102, 102);
+    display: inline-block;
+    background: #ffffff;
+}
+
+.menu_item_tab {
+    position: relative;
+    height: 79rpx;
+}
+
+.menu_item_tab::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #d9d9d9;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    bottom: 0;
+    border-bottom: 1px solid #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.xscroll_bar .active {
+    color: #CFB76B;
+}
+
+.active::after {
+    border-bottom: 4px solid #CFB76B;
+}
+
+.swiper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: inherit;
+}
+
+.content-scroll {
+    position: absolute;
+    top: 80rpx;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    width: inherit;
+}
+
+.weui-panel {
+    margin-top: -2rpx !important;
+}

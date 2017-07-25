@@ -1,0 +1,124 @@
+<!--pages/product-details/product-details.wxml-->
+<scroll-view class="content-scroll" scroll-y="true">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-color="#e8e8e8" indicator-active-color="#CFB76B">
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+            <swiper-item data-current="{{item}}" bindtap="previewImage">
+                <image src="{{item}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="product-box">
+        <view class="title">
+            <text>牛轧糖买三盒立减15元</text>
+        </view>
+        <view class="price">
+            <text class="icon">￥</text>
+            <text>29.9</text>
+        </view>
+    </view>
+
+    <view class="weui-cells specification-box">
+        <view class="weui-cell weui-cell_link" bindtap="showSpecification">
+            <view class="weui-cell__bd">
+                <text class="placeholder">已选</text>
+                <text>牛轧糖，三盒</text>
+            </view>
+            <view class="weui-cell__ft {{isShowSpecification == true ? 'true' : ''}}">
+            </view>
+        </view>
+        <view class="specification-items" wx:if="{{isShowSpecification}}">
+            <view class="weui-cell">
+                <view class="placeholder">重量</view>
+                <view class="specification-flex_item">
+                    <wx-button class="specification-btn active">2kg</wx-button>
+                    <wx-button class="specification-btn">4kg</wx-button>
+                    <wx-button class="specification-btn">6kg</wx-button>
+                    <wx-button class="specification-btn">8kg</wx-button>
+                    <wx-button class="specification-btn">10kg</wx-button>
+                    <wx-button class="specification-btn">11kg</wx-button>
+                    <wx-button class="specification-btn">12kg</wx-button>
+                    <wx-button class="specification-btn">14kg</wx-button>
+                    <wx-button class="specification-btn">16kg</wx-button>
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="placeholder">颜色</view>
+                <view class="specification-flex_item">
+                    <wx-button class="specification-btn">粉色</wx-button>
+                    <wx-button class="specification-btn active">金色</wx-button>
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="placeholder">数量</view>
+                <view class="specification-flex_item">
+                    <view class="number-box">
+                        <text>{{quantity}}</text>
+                        <button class="minus-btn"><text class="ion-android-remove"></text></button>
+                        <button class="plus-btn"><text class="ion-android-add"></text></button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd overflow-hidden text-default">
+            <text class="float-left">评论</text>
+            <text class="float-right"><text class="text-sw">93.7%</text>好评</text>
+        </view>
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text comment-item" wx:for="{{comments}}" wx:key="*this">
+                <view class="weui-media-box__title user-name">
+                    <text>{{item.username}}</text>
+                    <text class="text-light">（{{item.level}}）</text>
+                </view>
+                <view class="weui-media-box__desc user-comment">
+                    <text>{{item.comment}}</text>
+                </view>
+                <view class="comment-images" wx:if="{{item.images.length > 0}}">
+                    <block wx:for="{{item.images}}" wx:for-item="image" wx:key="*this">
+                        <image src="{{image}}" data-urls="{{item.images}}" data-current="{{image}}" bindtap="commentPreviewImage" mode="aspectFill"></image>
+                    </block>
+                </view>
+                <view class="comment-date">
+                    <text>{{item.date}}</text>
+                </view>
+            </view>
+        </view>
+        <navigator url="/pages/product-comments/product-comments?id=1" class="weui-panel__ft">
+            <view class="weui-cell weui-cell_access weui-cell_link">
+                <view class="weui-cell__bd text-light">共130条评论</view>
+                <view class="weui-cell__ft">查看更多</view>
+            </view>
+        </navigator>
+    </view>
+
+    <view class="my-tab">
+        <view class="my-navbar">
+            <view class="my-navbar__item {{activeIndex == 0 ? 'my-navbar__item_on' : ''}}" data-index="0" bindtap="tabChange">
+                <text>商品介绍</text>
+            </view>
+            <view class="my-navbar__item {{activeIndex == 1 ? 'my-navbar__item_on' : ''}}" data-index="1" bindtap="tabChange">
+                <text>售后保障</text>
+            </view>
+        </view>
+        <view class="my-tab__panel">
+            <swiper bindchange="swiperChange" current="{{activeIndex}}">
+                <swiper-item>
+                    1
+                </swiper-item>
+                <swiper-item>
+                    2
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+</scroll-view>
+<view class="tabbar">
+    <view class="tabbar-item shopping-cart-btn" bindtap="addShoppingCart">
+        加入购物车
+    </view>
+    <view class="tabbar-item buy-now-btn" bindtap="toBuyNow">
+        立即购买
+    </view>
+</view>

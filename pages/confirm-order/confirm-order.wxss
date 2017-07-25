@@ -1,0 +1,131 @@
+page {
+    background-color: #F8F8F8;
+}
+
+.content-scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 90rpx;
+    left: 0;
+}
+
+.shipping-type {
+    font-size: 28rpx;
+}
+
+.weui-cell {
+    font-size: 28rpx;
+}
+
+wx-radio .wx-radio-input.wx-radio-input-checked {
+    background-color: #CFB76B !important;
+    border-color: #CFB76B !important;
+}
+
+wx-radio .wx-radio-input {
+    width: 18px;
+    height: 18px;
+}
+
+.weui-input {
+    position: relative;
+    border-radius: 10rpx;
+    height: 2em;
+    min-height: 2em;
+    line-height: 2em;
+    padding: 0 52rpx 0 20rpx;
+}
+
+.weui-input::after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2rpx solid rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 20rpx;
+}
+
+.weui-input::before {
+    content: " ";
+    display: inline-block;
+    height: 12rpx;
+    width: 12rpx;
+    border-width: 2rpx 2rpx 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -4rpx;
+    position: absolute;
+    top: 50%;
+    margin-top: -10rpx;
+    right: 20rpx;
+    transform: rotate(135deg);
+}
+
+wx-picker {
+    float: right;
+    margin-left: 30rpx;
+}
+
+.price {
+    color: #CFB76B;
+}
+
+.price .icon {
+    font-size: 28rpx;
+}
+
+.weui-media-box__desc {
+    line-height: 1.3;
+}
+
+.weui-form-preview__item {
+    font-size: 28rpx;
+}
+
+.weui-form-preview__label {
+    color: #333333;
+}
+
+.tabbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.tabbar-item {
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    flex: 1;
+}
+
+.total-amount {
+    font-size: 38rpx;
+    background: #ffffff;
+    color: #CFB76B;
+}
+
+.pay-btn {
+    background: #E3393C;
+    color: #ffffff;
+}
+
+.pay-btn:active {
+    opacity: 0.7;
+}

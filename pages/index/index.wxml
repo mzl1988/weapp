@@ -1,0 +1,15 @@
+<import src="../../templates/index-swiper.wxml" />
+<import src="../../templates/index-menu.wxml" />
+<import src="../../templates/index-section-x.wxml" />
+<import src="../../templates/index-section-y.wxml" />
+<!--index.wxml-->
+<view class="index-body">
+    <template is="indexSwiper" data="{{imgUrls: imgUrls}}" />
+
+    <template is="indexMenu" data="{{navs: navs}}" />
+
+    <template is="indexSectionx" />
+
+    <template is="indexSectiony" data="{{imgUrls: imgUrls}}" />
+
+</view>

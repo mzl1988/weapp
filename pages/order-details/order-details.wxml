@@ -1,0 +1,112 @@
+<scroll-view class="content-scroll" scroll-y="true">
+    <view class="weui-form-preview">
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">订单编号：</view>
+                <view class="weui-form-preview__value text-left text-default">9981824891</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">下单时间：</view>
+                <view class="weui-form-preview__value  text-left text-default">2017-07-24 11:07:09</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="weui-form-preview margin-top-10">
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">商品金额：</view>
+                <view class="weui-form-preview__value text-left">
+                    <text class="text-sw">￥29.9</text>
+                    <text>（微信支付）</text>
+                </view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">收货地址：</view>
+                <view class="weui-form-preview__value  text-left text-default">广东省珠海市香洲区吉大区海滨南路47号光大国际中心801</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">收 货 人：</view>
+                <view class="weui-form-preview__value  text-left text-default">李兰国 13726268701</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">
+            <view class="weui-flex">
+                <view class="weui-flex__item">
+                    <text class="text-default">蜜悦法式烘培</text>
+                </view>
+                <view class="weui-flex__item text-right text-sw">
+                    <text>等待付款</text>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_appmsg">
+                <view class="weui-media-box__hd">
+                    <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                    <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                    <view class="weui-flex margin-top-5">
+                        <view class="weui-flex__item price">
+                            <text class="icon">￥</text>
+                            <text>29.9</text>
+                        </view>
+                        <view class="weui-flex__item text-right quantity">
+                            <text>×3</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-media-box weui-media-box_appmsg">
+                <view class="weui-media-box__hd">
+                    <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                    <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                    <view class="weui-flex margin-top-5">
+                        <view class="weui-flex__item price">
+                            <text class="icon">￥</text>
+                            <text>29.9</text>
+                        </view>
+                        <view class="weui-flex__item text-right quantity">
+                            <text>×1</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="weui-form-preview margin-top-10 margin-bottom-10">
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">商品总额：</view>
+                <view class="weui-form-preview__value text-sw">￥53.80</view>
+            </view>
+            <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">运费：</view>
+                <view class="weui-form-preview__value text-sw">￥0.0</view>
+            </view>
+        </view>
+        <view class="weui-cell total-amount">
+            <view class="weui-cell__bd">
+                <text>实付金额：</text>
+                <text class="text-sw">￥53.80</text>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+<view class="tabbar">
+    <view class="tabbar-item default-btn">
+        取消订单
+    </view>
+    <view class="tabbar-item pay-btn">
+        去支付
+    </view>
+</view>

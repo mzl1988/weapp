@@ -1,0 +1,72 @@
+page {
+    background-color: #efeff4;
+}
+
+.content-scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 90rpx;
+    left: 0;
+}
+
+.tabbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.tabbar-item {
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    flex: 1;
+}
+
+.default-btn {
+    background: #F8F8F8;
+}
+
+.default-btn:active {
+    background: rgba(248, 248, 248, 0.7);
+}
+
+.pay-btn {
+    background: #E3393C;
+    color: #ffffff;
+}
+
+.pay-btn:active {
+    background: rgba(227, 57, 60, 0.7);
+}
+
+.weui-form-preview__label {
+    font-size: 28rpx;
+}
+
+.price {
+    font-size: 26rpx;
+    color: #CFB76B;
+}
+
+.price .icon {
+    font-size: 24rpx;
+}
+
+.quantity {
+    font-size: 26rpx;
+}
+
+.total-amount {
+    font-size: 34rpx !important;
+    text-align: right;
+}
+
+.total-amount:active {
+    background-color: #ffffff;
+}

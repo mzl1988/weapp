@@ -1,0 +1,51 @@
+<!--pages/mine-info/mine-info.wxml-->
+<view class="container">
+    <view class="page-body">
+        <view class="page-section">
+            <view class="weui-cells">
+                <view class="weui-cell">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">昵称</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <text>{{userInfo.nickName}} {{systemInfo.SDKVersion}}</text>
+                    </view>
+                </view>
+
+                <view class="weui-cell">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">性别</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <text>{{userInfo.gender === 2 ? '男' : '女'}}</text>
+                    </view>
+                </view>
+
+                <view class="weui-cell">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">生日</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                            <view class="weui-input">{{date}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+
+            <view class="weui-cells">
+                <view class="weui-cell">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">所在地区</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+                            <view class="weui-input">{{region[0]}}-{{region[1]}}-{{region[2]}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>

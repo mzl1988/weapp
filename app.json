@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/classify/classify",
+        "pages/product-details/product-details",
+        "pages/product-comments/product-comments",
+        "pages/confirm-order/confirm-order",
+        "pages/cart/cart",
+        "pages/mine/mine",
+        "pages/shipping-address/shipping-address",
+        "pages/shipping-address-details/shipping-address-details",
+        "pages/mine-info/mine-info",
+        "pages/orders/orders",
+        "pages/order-details/order-details",
+        "pages/evaluate/evaluate"
+    ],
+    "tabBar": {
+        "color": "#666",
+        "selectedColor": "#CFB76B",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "images/home_light.png",
+            "selectedIconPath": "images/home_fill_light.png"
+        }, {
+            "pagePath": "pages/classify/classify",
+            "text": "分类",
+            "iconPath": "images/goods_new_light.png",
+            "selectedIconPath": "images/goods_new_fill_light.png"
+        }, {
+            "pagePath": "pages/cart/cart",
+            "text": "购物车",
+            "iconPath": "images/cart_light.png",
+            "selectedIconPath": "images/cart_fill.png"
+        }, {
+            "pagePath": "pages/mine/mine",
+            "text": "我的",
+            "iconPath": "images/people.png",
+            "selectedIconPath": "images/people_fill.png"
+        }]
+    },
+    "window": {
+        "backgroundColor": "#f8f8f8",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#CFB76B",
+        "navigationBarTitleText": "mzl1988",
+        "navigationBarTextStyle": "#fff"
+    }
+}

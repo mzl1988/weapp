@@ -1,0 +1,79 @@
+<scroll-view class="content-scroll" scroll-y="true">
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd" wx:if="{{title == '选择收货地址'}}">收货地址</view>
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_appmsg active-bg" data-id="1" bindtap="toProductDetails">
+                <view class="weui-media-box__checkbox">
+                    <text class="ion-ios-circle-outline input-checked"></text>
+                </view>
+                <view class="weui-media-box__hd">
+                    <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">牛轧糖买三盒立减15元</view>
+                    <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                    <view class="weui-flex margin-top-5">
+                        <view class="weui-flex__item price">
+                            <text class="icon">￥</text>
+                            <text>29.9</text>
+                        </view>
+                        <view class="weui-flex__item text-right">
+                            <view class="number-box float-right">
+                                <text>1</text>
+                                <button class="minus-btn"><text class="ion-android-remove"></text></button>
+                                <button class="plus-btn"><text class="ion-android-add"></text></button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-cell__trash" catchtap="remove">
+                    <text class="ion-ios-trash"></text>
+                </view>
+            </view>
+            <view class="weui-media-box weui-media-box_appmsg active-bg" data-id="2" bindtap="toProductDetails">
+                <view class="weui-media-box__checkbox">
+                    <text class="ion-ios-circle-outline"></text>
+                </view>
+                <view class="weui-media-box__hd">
+                    <image class="weui-media-box__thumb" src="/images/goods1.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">牛轧糖</view>
+                    <view class="weui-media-box__desc">重量：5.475kg/件</view>
+                    <view class="weui-flex margin-top-5">
+                        <view class="weui-flex__item price">
+                            <text class="icon">￥</text>
+                            <text>29.9</text>
+                        </view>
+                        <view class="weui-flex__item text-right">
+                            <view class="number-box float-right">
+                                <text>1</text>
+                                <button class="minus-btn"><text class="ion-android-remove"></text></button>
+                                <button class="plus-btn"><text class="ion-android-add"></text></button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-cell__trash" catchtap="remove">
+                    <text class="ion-ios-trash"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<view class="tabbar">
+    <view class="check-all">
+        <view class="icon">
+            <text class="ion-ios-circle-outline input-checked"></text>
+        </view>
+        <view class="text">全选</view>
+    </view>
+    <view class="tabbar-item total-amount">
+        <text>总计：</text>
+        <text class="text-sw">￥100.00</text>
+    </view>
+    <view class="pay-btn">
+        去结算
+    </view>
+</view>

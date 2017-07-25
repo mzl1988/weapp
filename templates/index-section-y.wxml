@@ -1,0 +1,42 @@
+<template name="indexSectiony">
+    <view class="index-section">
+        <view class="section-title">热销专区</view>
+        <view class="section-content-2">
+            <view class="product-content"  data-product="{{imgUrls}}" bindtap="productDetails">
+                <view class="section-item">
+                    <image src="/images/goods1.jpg" class="section-img" mode="widthFix" />
+                    <text class="section-name">牛轧糖买三盒立减15元</text>
+                    <text class="section-price">￥29.9</text>
+                </view>
+            </view>
+            <view class="product-content" bindtap="productDetails">
+                <view class="section-item">
+                    <image src="/images/goods1.jpg" class="section-img" mode="widthFix" />
+                    <text class="section-name">牛轧糖买三盒立减15元</text>
+                    <text class="section-price">￥29.9</text>
+                </view>
+            </view>
+            <view class="product-content" bindtap="productDetails">
+                <view class="section-item">
+                    <image src="/images/goods1.jpg" class="section-img" mode="widthFix" />
+                    <text class="section-name">牛轧糖买三盒立减15元</text>
+                    <text class="section-price">￥29.9</text>
+                </view>
+            </view>
+            <view class="product-content" bindtap="productDetails">
+                <view class="section-item">
+                    <image src="/images/goods1.jpg" class="section-img" mode="widthFix" />
+                    <text class="section-name">牛轧糖买三盒立减15元</text>
+                    <text class="section-price">￥29.9</text>
+                </view>
+            </view>
+            <view class="product-content" bindtap="productDetails">
+                <view class="section-item">
+                    <image src="/images/goods1.jpg" class="section-img" mode="widthFix" />
+                    <text class="section-name">牛轧糖买三盒立减15元</text>
+                    <text class="section-price">￥29.9</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

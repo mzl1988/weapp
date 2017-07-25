@@ -1,0 +1,35 @@
+<scroll-view class="content-scroll" scroll-y="true">
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd" wx:if="{{title == '选择收货地址'}}">收货地址</view>
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_appmsg active-bg" data-id="1" bindtap="toAddressDetails">
+                <view class="weui-media-box__hd">
+                    <text class="ion-ios-circle-outline input-checked"></text>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">李兰国 13726268701</view>
+                    <view class="weui-media-box__desc">广东省珠海市香洲区吉大区海滨南路47号光大国际中心801</view>
+                </view>
+                <view class="weui-cell__trash" catchtap="remove">
+                    <text class="ion-ios-trash"></text>
+                </view>
+            </view>
+            <view class="weui-media-box weui-media-box_appmsg active-bg" data-id="2" bindtap="toAddressDetails">
+                <view class="weui-media-box__hd">
+                    <text class="ion-ios-circle-outline"></text>
+                </view>
+                <view class="weui-media-box__bd">
+                    <view class="weui-media-box__title">小小 13612451451</view>
+                    <view class="weui-media-box__desc">广东省珠海市香洲区吉大区海滨南路47号光大国际中心801</view>
+                </view>
+                <view class="weui-cell__trash" catchtap="remove">
+                    <text class="ion-ios-trash"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<navigator url="/pages/shipping-address-details/shipping-address-details" class="tabbar">
+    <button class="add-btn">新增收货地址</button>
+</navigator>

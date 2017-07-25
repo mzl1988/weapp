@@ -1,0 +1,37 @@
+<view class="classify-body">
+    <scroll-view scroll-x="true" class="xscroll_bar" scroll-left="{{scrollLeft}}">
+        <view class="menu_item" style="width: {{itemWidth}};" wx:for="{{menus}}" wx:key="*this" bindtap="tabChange" data-index="{{index}}">
+            <view class="menu_item_tab {{index==activeIndex?'active':''}}">
+                {{item.menu}}
+            </view>
+        </view>
+    </scroll-view>
+
+    <swiper class="swiper" bindchange="swiperChange" current="{{activeIndex}}">
+        <swiper-item wx:for="{{menus}}" wx:key="*this">
+            <scroll-view class="content-scroll" scroll-y="true" bindscrolltolower="bindDownLoad">
+                <view class="weui-panel weui-panel_access">
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text comment-item" wx:for="{{comments}}" wx:key="*this">
+                            <view class="weui-media-box__title user-name">
+                                <text>{{item.username}}</text>
+                                <text class="text-light">（{{item.level}}）</text>
+                            </view>
+                            <view class="weui-media-box__desc user-comment">
+                                <text>{{item.comment}}</text>
+                            </view>
+                            <view class="comment-images" wx:if="{{item.images.length > 0}}">
+                                <block wx:for="{{item.images}}" wx:for-item="image" wx:key="*this">
+                                    <image src="{{image}}" data-urls="{{item.images}}" data-current="{{image}}" bindtap="commentPreviewImage" mode="aspectFill"></image>
+                                </block>
+                            </view>
+                            <view class="comment-date">
+                                <text>{{item.date}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

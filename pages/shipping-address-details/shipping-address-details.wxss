@@ -1,0 +1,12 @@
+page {
+    background-color: #F8F8F8;
+}
+
+.ion-pinpoint {
+    color: #333333;
+    padding-left: 30rpx;
+}
+
+.ion-pinpoint:active {
+    color: #CFB76B;
+}

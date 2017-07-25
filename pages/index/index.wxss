@@ -1,0 +1,210 @@
+/**index.wxss**/
+
+page {
+    background-color: #efeff4;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.index-body {
+    flex: 1;
+    min-height: 100%;
+    font-size: 28rpx;
+}
+
+
+/*轮播*/
+
+swiper.swiper {
+    height: 330rpx;
+    margin-bottom: 16rpx;
+}
+
+.swiper-item {
+    display: block;
+    height: 100%;
+}
+
+.slide-image {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+/*菜单栏*/
+
+.index-menu {
+    width: 100%;
+    margin-top: 20rpx;
+    background-color: #ffffff;
+}
+
+.index-menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-list {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20rpx 0;
+}
+
+.menu-img {
+    width: 84rpx;
+    height: 84rpx;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10rpx;
+}
+
+.menu-desc {
+    background-color: #ffffff;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 24rpx;
+}
+
+.index-section {
+    background-color: #fff;
+    padding: 20rpx 0 10rpx 0;
+    margin-top: 20rpx;
+}
+
+.section-title {
+    padding: 0 16rpx;
+    font-size: 36rpx;
+    color: #CFB76B;
+    border-left: 10rpx solid #CFB76B;
+    margin-bottom: 20rpx;
+}
+
+.section-content-1 {
+    position: relative;
+    display: flex;
+    line-height: 1.5;
+}
+
+.section-content-1::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #d9d9d9;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    top: 0;
+    border-top: 1px solid #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+wx-scroll-view {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.section-content-1 .section-item {
+    flex: 1;
+    padding: 20rpx 0 10px 20rpx;
+    width: 40%;
+    display: inline-block;
+}
+
+.section-content-1 .section-item:last-child {
+    margin-right: 20rpx;
+}
+
+.section-content-1 .section-img {
+    width: 100%;
+}
+
+.section-content-1 .section-name {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 20rpx;
+}
+
+.section-content-1 .section-price {
+    display: block;
+    text-align: center;
+    color: #CFB76B;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 20rpx;
+}
+
+.section-content-2 {
+    position: relative;
+    overflow: hidden;
+    padding: 10rpx 10rpx 10rpx 10rpx;
+}
+
+.section-content-2::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #d9d9d9;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    top: 0;
+    border-top: 1px solid #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.product-content {
+    width: 50%;
+    float: left;
+}
+
+.product-content .section-content {
+    line-height: 1.5;
+    padding: 10rpx;
+}
+
+.product-content .section-item {
+    flex: 1;
+    margin: 5px;
+    background: #ffffff;
+}
+
+.product-content .section-img {
+    width: 100%;
+}
+
+.product-content .section-name {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 20rpx;
+}
+
+.product-content .section-price {
+    display: block;
+    text-align: center;
+    color: #CFB76B;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 20rpx;
+}

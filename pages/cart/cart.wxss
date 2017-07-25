@@ -1,0 +1,129 @@
+/* pages/cart/cart.wxss */
+
+page {
+    background-color: #F8F8F8;
+}
+
+.content-scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 100rpx;
+    left: 0;
+}
+
+.tabbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.tabbar-item {
+    height: 100rpx;
+    line-height: 100rpx;
+    flex: 1;
+}
+
+.check-all {
+    width: 90rpx;
+    height: 100rpx;
+    text-align: center;
+}
+
+.check-all .icon {
+    color: #D1D1D1;
+    font-size: 50rpx;
+    height: 50rpx;
+}
+
+.check-all .icon .ion-ios-circle-outline::before {
+    top: 10rpx;
+    left: 26rpx;
+    position: absolute;
+}
+
+.check-all .text {
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+}
+
+.total-amount {
+    padding-right: 15rpx;
+    text-align: right;
+    background: #ffffff;
+}
+
+.pay-btn {
+    width: 200rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background: #E3393C;
+    color: #ffffff;
+}
+
+.pay-btn:active {
+    opacity: 0.7;
+}
+
+.weui-media-box {
+    padding-left: 10rpx;
+    padding-right: 0;
+}
+
+.weui-media-box_appmsg .weui-media-box__checkbox {
+    margin-right: .2em;
+    width: 60rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #D1D1D1;
+    font-size: 50rpx;
+}
+
+.weui-media-box_appmsg .weui-media-box__hd {
+    margin-right: .4em;
+}
+
+.weui-cell__trash {
+    text-align: right;
+    color: #dddddd;
+    padding: 30rpx;
+    font-size: 40rpx;
+    margin-top: -100rpx;
+}
+
+.weui-cell__trash:active {
+    color: #CFB76B;
+}
+
+.input-checked {
+    color: #CFB76B;
+}
+
+.input-checked:before {
+    content: "\f3ff";
+}
+
+.weui-media-box__desc {
+    line-height: 1.3;
+}
+
+.price {
+    color: #CFB76B;
+}
+
+.price .icon {
+    font-size: 28rpx;
+}
+
+.number-box {
+    margin-right: -56rpx
+}

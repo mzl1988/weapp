@@ -1,0 +1,8 @@
+<template name="indexMenu">
+    <view class="index-menu">
+        <view class="menu-list" wx:for="{{navs}}" wx:key="*this">
+            <image class="menu-img" src="{{item.icon}}" />
+            <view class="menu-desc">{{item.title}}</view>
+        </view>
+    </view>
+</template>

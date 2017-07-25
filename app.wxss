@@ -1,0 +1,343 @@
+@import "./styles/weui.wxss";
+@import "./styles/my.wxss";
+@import "./styles/ionicons.wxss";
+
+/**app.wxss**/
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-sw {
+    color: #CFB76B !important;
+}
+
+.text-default {
+    color: #333333 !important;
+}
+
+.text-light {
+    color: #999999 !important;
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+
+.margin-left-1 {
+    margin-left: 2rpx;
+}
+
+.margin-left-2 {
+    margin-left: 4rpx;
+}
+
+.margin-left-3 {
+    margin-left: 6rpx;
+}
+
+.margin-left-4 {
+    margin-left: 8rpx;
+}
+
+.margin-left-5 {
+    margin-left: 10rpx;
+}
+
+.margin-left-6 {
+    margin-left: 12rpx;
+}
+
+.margin-left-7 {
+    margin-left: 14rpx;
+}
+
+.margin-left-8 {
+    margin-left: 16rpx;
+}
+
+.margin-left-9 {
+    margin-left: 18rpx;
+}
+
+.margin-left-10 {
+    margin-left: 20rpx;
+}
+
+.margin-top-1 {
+    margin-top: 2rpx;
+}
+
+.margin-top-2 {
+    margin-top: 4rpx;
+}
+
+.margin-top-3 {
+    margin-top: 6rpx;
+}
+
+.margin-top-4 {
+    margin-top: 8rpx;
+}
+
+.margin-top-5 {
+    margin-top: 10rpx;
+}
+
+.margin-top-6 {
+    margin-top: 12rpx;
+}
+
+.margin-top-7 {
+    margin-top: 14rpx;
+}
+
+.margin-top-8 {
+    margin-top: 16rpx;
+}
+
+.margin-top-9 {
+    margin-top: 18rpx;
+}
+
+.margin-top-10 {
+    margin-top: 20rpx;
+}
+
+.margin-top-15 {
+    margin-top: 30rpx;
+}
+
+.padding-right-1 {
+    padding-right: 2rpx;
+}
+
+.padding-right-2 {
+    padding-right: 4rpx;
+}
+
+.padding-right-3 {
+    padding-right: 6rpx;
+}
+
+.padding-right-4 {
+    padding-right: 8rpx;
+}
+
+.padding-right-5 {
+    padding-right: 10rpx;
+}
+
+.padding-right-6 {
+    padding-right: 12rpx;
+}
+
+.padding-right-7 {
+    padding-right: 14rpx;
+}
+
+.padding-right-8 {
+    padding-right: 16rpx;
+}
+
+.padding-right-9 {
+    padding-right: 18rpx;
+}
+
+.padding-right-10 {
+    padding-right: 20rpx;
+}
+
+.active-bg:active {
+    background-color: #ECECEC;
+}
+
+.sw-btn {
+    background: #CFB76B;
+    color: #ffffff;
+}
+
+.sw-btn.button-hover {
+    background: rgba(207, 183, 107, 0.7);
+}
+
+.blue-btn {
+    background: #3884FE;
+    color: #ffffff;
+}
+
+.blue-btn.button-hover {
+    background: rgba(56, 132, 254, 0.7);
+}
+
+.divider-line {
+    position: relative;
+    height: 2rpx;
+}
+
+.divider-line:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 2rpx;
+    border-bottom: 2rpx solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+
+/* tab */
+
+.my-tab {
+    height: auto;
+    background: #ffffff;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.my-navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.my-navbar__item {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 20rpx 0;
+    text-align: center;
+    font-size: 28rpx;
+}
+
+.my-navbar__item::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #d9d9d9;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    bottom: 0;
+    border-bottom: 1px solid #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.my-navbar__item_on {
+    color: #CFB76B;
+}
+
+.my-navbar__item_on::after {
+    border-bottom: 4px solid #CFB76B;
+}
+
+.my-tab__panel {
+    min-height: 200rpx;
+    background: #ffffff;
+}
+
+
+/* 评论 */
+
+.comment-item {}
+
+.comment-item .user-name {
+    color: #333333;
+    font-size: 28rpx
+}
+
+.comment-item .user-comment {
+    color: #000000;
+    -webkit-line-clamp: 3;
+    margin-top: 10rpx;
+}
+
+.comment-images {
+    width: auto;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.comment-images image {
+    width: 150rpx;
+    height: 150rpx;
+    margin: 20rpx 20rpx 0 0;
+}
+
+.comment-date {
+    margin-top: 16rpx;
+    font-size: 28rpx;
+    color: #999999;
+}
+
+
+/* 商品加减 */
+
+.number-box {
+    width: 200rpx;
+    height: 60rpx;
+    border-radius: 60rpx;
+    background: #efeff4;
+    text-align: center;
+    line-height: 60rpx;
+    color: #CFB76B;
+}
+
+.number-box .plus-btn {
+    float: right;
+}
+
+.number-box .minus-btn {
+    float: left;
+}
+
+.number-box .plus-btn,
+.number-box .minus-btn {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    line-height: 58rpx;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid #dcdcdc;
+    color: #888;
+    background: #ffffff;
+}
+
+.number-box .plus-btn::after,
+.number-box .minus-btn::after {
+    display: none;
+}
+
+.number-box .plus-btn.button-hover,
+.number-box .minus-btn.button-hover {
+    border-color: #CFB76B;
+    color: #CFB76B;
+}
